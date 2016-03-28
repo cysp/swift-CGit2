@@ -1,5 +1,25 @@
 module CGit2 [system] {
-    header "/usr/local/include/git2.h"
+    umbrella "/usr/local/include/git2"
+
+    exclude header "/usr/local/include/git2/inttypes.h"
+    exclude header "/usr/local/include/git2/stdint.h"
+
+    exclude header "/usr/local/include/git2/sys/commit.h"
+    exclude header "/usr/local/include/git2/sys/config.h"
+    exclude header "/usr/local/include/git2/sys/diff.h"
+    exclude header "/usr/local/include/git2/sys/filter.h"
+    exclude header "/usr/local/include/git2/sys/hashsig.h"
+    exclude header "/usr/local/include/git2/sys/index.h"
+    exclude header "/usr/local/include/git2/sys/mempack.h"
+    exclude header "/usr/local/include/git2/sys/odb_backend.h"
+    exclude header "/usr/local/include/git2/sys/openssl.h"
+    exclude header "/usr/local/include/git2/sys/refdb_backend.h"
+    exclude header "/usr/local/include/git2/sys/reflog.h"
+    exclude header "/usr/local/include/git2/sys/refs.h"
+    exclude header "/usr/local/include/git2/sys/repository.h"
+    exclude header "/usr/local/include/git2/sys/stream.h"
+    exclude header "/usr/local/include/git2/sys/transport.h"
+
     link "git2"
     export *
 }

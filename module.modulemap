@@ -59,4 +59,23 @@ module CGit2 [system] {
     header "/usr/local/include/git2/version.h"
     link "git2"
     export *
+
+    module sys {
+        header "/usr/local/include/git2/sys/commit.h"
+        header "/usr/local/include/git2/sys/config.h"
+        header "/usr/local/include/git2/sys/diff.h"
+        header "/usr/local/include/git2/sys/filter.h"
+        header "/usr/local/include/git2/sys/hashsig.h"
+        header "/usr/local/include/git2/sys/index.h"
+        header "/usr/local/include/git2/sys/mempack.h"
+        header "/usr/local/include/git2/sys/odb_backend.h"
+        header "/usr/local/include/git2/sys/openssl.h"
+        header "/usr/local/include/git2/sys/refdb_backend.h"
+        header "/usr/local/include/git2/sys/reflog.h"
+        header "/usr/local/include/git2/sys/refs.h"
+        header "/usr/local/include/git2/sys/repository.h"
+        header "/usr/local/include/git2/sys/stream.h"
+        header "/usr/local/include/git2/sys/transport.h"
+        export *
+    }
 }
